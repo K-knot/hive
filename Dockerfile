@@ -34,7 +34,7 @@ RUN echo "Delete some sentence to avoid errors"
 RUN sed -i -e 's/&#8;//' /usr/hive-3.1.2/conf/hive-site.xml
 RUN echo "Add Configuration"
 RUN sed -i -e 's/<\/configuration>//' /usr/hive-3.1.2/conf/hive-site.xml
-COPY hive-template /tmp/hive-template
+COPY hive-site.xml /tmp/hive-template
 RUN cat /tmp/hive-template >> /usr/hive-3.1.2/conf/hive-site.xml
 RUN cp /usr/hadoop-3.2.2/share/hadoop/hdfs/lib/guava-27.0-jre.jar /usr/hive-3.1.2/lib/
 RUN rm -f /usr/hive-3.1.2/lib/guava-19.0.jar
