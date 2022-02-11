@@ -1,0 +1,29 @@
+<property>
+    <name>javax.jdo.option.ConnectionURL</name>
+    <value>jdbc:derby:;databaseName=/usr/hive-3.1.2/conf/metastore_db;create=true </value>
+    <description>JDBC connect string for a JDBC metastore </description>
+ </property>
+  <property>
+    <name>hive.querylog.location</name>
+    <value>/usr/hive-3.1.2/iotmp</value>
+    <description>Location of Hive run time structured log file</description>
+  </property>
+  <property>
+    <name>hive.exec.local.scratchdir</name>
+    <value>/usr/hive-3.1.2/iotmp</value>
+    <description>Local scratch space for Hive jobs</description>
+  </property>
+  <property>
+    <name>hive.downloaded.resources.dir</name>
+    <value>/usr/hive-3.1.2/iotmp</value>
+    <description>Temporary local directory for added resources in the remote file system.</description>
+  </property>
+  <property>
+    <name>system:java.io.tmpdir</name>
+    <value>/usr/hive-3.1.2/tmp</value>
+  </property>
+  <property>
+    <name>system:user.name</name>
+    <value>USERNAME</value>
+  </property>
+</configuration>
